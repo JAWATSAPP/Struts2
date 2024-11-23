@@ -21,6 +21,7 @@
         </action>
         <action name="registros" class="com.mycompany.struts1.registros.action.Registros" method="execute">
             <result name="success">/thank.jsp</result>
+             <result name="input">/registros.jsp</result>
            
         </action>
         

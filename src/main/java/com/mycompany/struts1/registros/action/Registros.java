@@ -30,32 +30,32 @@ public class Registros extends ActionSupport {
     public void setUsuarioBean(Usuario usuario) {
         usuarioBean = usuario;
     }
-
+    
     public void validate() {
         if (usuarioBean.getNombre().length() == 0) {
-            addFieldError("usuarioBean.getNombre", "Name is required.");
+            addFieldError("usuarioBean.Nombre", "Name is required.");
         }
 
         if (usuarioBean.getApePaterno().length() == 0) {
-            addFieldError("usuarioBean.getApePaterno", "Apellido Paterno is required.");
+            addFieldError("usuarioBean.apePaterno", "Apellido Paterno is required.");
         }
         if (usuarioBean.getApeMaterno().length() == 0) {
-            addFieldError("usuarioBean.getApeMaterno", "Apellido Materno is required.");
+            addFieldError("usuarioBean.apeMaterno", "Apellido Materno is required.");
         }
         if (usuarioBean.getFecNac().length() == 0) {
-            addFieldError("usuarioBean.getFecNac", "Fecha de Nacimiento is required.");
+            addFieldError("usuarioBean.fecNac", "Fecha de Nacimiento is required.");
         }
         if (usuarioBean.getLugarRes().length() == 0) {
-            addFieldError("usuarioBean.getLugarRes", "Residencia is required.");
+            addFieldError("usuarioBean.lugarRes", "Residencia is required.");
         }
         if (usuarioBean.getEdad().length() == 0) {
-            addFieldError("usuarioBean.getEdad", "Edad is required.");
+            addFieldError("usuarioBean.edad", "Edad is required.");
         }
         if (usuarioBean.getTelefono().length() == 0) {
-            addFieldError("usuarioBean.getTelefono", "Telefono is required.");
+            addFieldError("usuarioBean.telefono", "Telefono is required.");
         }
         if (usuarioBean.getCorreo().length() == 0) {
-            addFieldError("usuarioBean.getCorreo", "correo is required.");
+            addFieldError("usuarioBean.correo", "correo is required.");
         }
 
     }
